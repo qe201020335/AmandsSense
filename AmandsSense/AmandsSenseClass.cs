@@ -1,6 +1,4 @@
 using UnityEngine;
-using UnityEngine.Rendering.PostProcessing;
-using UnityStandardAssets.ImageEffects;
 using UnityEngine.SceneManagement;
 using System;
 using EFT.Weather;
@@ -19,7 +17,6 @@ using UnityEngine.Networking;
 using EFT.Interactive;
 using System.Linq;
 using Aki.Common.Utils;
-using Sirenix.Utilities;
 
 namespace AmandsSense
 {

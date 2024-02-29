@@ -8,7 +8,6 @@ using System.IO;
 using System.Reflection;
 using System.Linq;
 using UnityEngine;
-using UnityEngine.Rendering.PostProcessing;
 using EFT.CameraControl;
 using EFT.InventoryLogic;
 using HarmonyLib;
