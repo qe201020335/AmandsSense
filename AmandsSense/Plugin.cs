@@ -237,7 +237,7 @@ namespace AmandsSense
     {
         protected override MethodBase GetTargetMethod()
         {
-            return typeof(LocalPlayer).GetMethod("Create", BindingFlags.Static | BindingFlags.Public);
+            return typeof(LocalPlayer).GetMethod("Create", BindingFlags.Static | BindingFlags.NonPublic | BindingFlags.Public);
         }
         [PatchPostfix]
         private static void PatchPostFix(ref Task<LocalPlayer> __result)
@@ -258,7 +258,7 @@ namespace AmandsSense
     {
         protected override MethodBase GetTargetMethod()
         {
-            return typeof(PrismEffects).GetMethod("OnEnable", BindingFlags.Instance | BindingFlags.NonPublic);
+            return typeof(PrismEffects).GetMethod("OnEnable", BindingFlags.Instance | BindingFlags.NonPublic | BindingFlags.Public);
         }
         [PatchPostfix]
         private static void PatchPostFix(ref PrismEffects __instance)
