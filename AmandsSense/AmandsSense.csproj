@@ -11,6 +11,7 @@
       https://nuget.samboy.dev/v3/index.json
     </RestoreAdditionalProjectSources>
     <RootNamespace>AmandsSense</RootNamespace>
+<!--    <DefineConstants>SIT</DefineConstants>-->
   </PropertyGroup>
   
   <ItemGroup>
@@ -52,7 +53,7 @@
       <Private>False</Private>
     </Reference>
     <Reference Include="UnityEngine.AudioModule">
-      <HintPath>..\..\SPTClientMods\References.aki\UnityEngine.AudioModule.dll</HintPath>
+      <HintPath>..\References\UnityEngine.AudioModule.dll</HintPath>
       <Private>False</Private>
     </Reference>
     <Reference Include="UnityEngine.CoreModule">
@@ -60,23 +61,23 @@
       <Private>False</Private>
     </Reference>
     <Reference Include="UnityEngine.InputLegacyModule">
-      <HintPath>..\..\SPTClientMods\References.aki\UnityEngine.InputLegacyModule.dll</HintPath>
+      <HintPath>..\References\UnityEngine.InputLegacyModule.dll</HintPath>
       <Private>False</Private>
     </Reference>
     <Reference Include="UnityEngine.PhysicsModule">
-      <HintPath>..\..\SPTClientMods\References.aki\UnityEngine.PhysicsModule.dll</HintPath>
+      <HintPath>..\References\UnityEngine.PhysicsModule.dll</HintPath>
       <Private>False</Private>
     </Reference>
     <Reference Include="UnityEngine.UnityWebRequestAudioModule">
-      <HintPath>..\..\SPTClientMods\References.aki\UnityEngine.UnityWebRequestAudioModule.dll</HintPath>
+      <HintPath>..\References\UnityEngine.UnityWebRequestAudioModule.dll</HintPath>
       <Private>False</Private>
     </Reference>
     <Reference Include="UnityEngine.UnityWebRequestModule">
-      <HintPath>..\..\SPTClientMods\References.aki\UnityEngine.UnityWebRequestModule.dll</HintPath>
+      <HintPath>..\References\UnityEngine.UnityWebRequestModule.dll</HintPath>
       <Private>False</Private>
     </Reference>
     <Reference Include="UnityEngine.UnityWebRequestTextureModule">
-      <HintPath>..\..\SPTClientMods\References.aki\UnityEngine.UnityWebRequestTextureModule.dll</HintPath>
+      <HintPath>..\References\UnityEngine.UnityWebRequestTextureModule.dll</HintPath>
       <Private>False</Private>
     </Reference>
   </ItemGroup>

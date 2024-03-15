@@ -18,6 +18,10 @@ using EFT.Interactive;
 using System.Linq;
 using Aki.Common.Utils;
 
+#if SIT
+using TemplateIdToObjectMappingsClass = GClass2741;
+#endif
+
 namespace AmandsSense
 {
     public class AmandsSenseClass : MonoBehaviour
