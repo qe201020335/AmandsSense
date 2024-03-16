@@ -81,4 +81,23 @@
       <Private>False</Private>
     </Reference>
   </ItemGroup>
+
+  <Target Name="Copy Assets" AfterTargets="CoreCompile">
+    <ItemGroup>
+      <MySourceFiles Include="assets\**\*.*"/>
+    </ItemGroup>
+    <Message Text="Copying asset files"/>
+    <Copy SourceFiles="@(MySourceFiles)" DestinationFolder="$(OutputPath)\Sense\%(RecursiveDir)" ContinueOnError="false" />
+    <Delete Files="$(OutputPath)\Sense\sounds\.gitkeep" />
+  </Target>
+  
+  <ItemGroup>
+    <Compile Remove="assets\**" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Remove="assets\**" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Remove="assets\**" />
+  </ItemGroup>
 </Project>
